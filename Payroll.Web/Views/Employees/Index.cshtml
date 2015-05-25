@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Payroll.Core.Entities.Employee>
+@{
+    Layout = null;
+}
+<ul>
+    @foreach (var e in Model)
+    {
+        <li>@e.LastName, @e.FirstName - @e.DependentCount</li>
+    }
+</ul>

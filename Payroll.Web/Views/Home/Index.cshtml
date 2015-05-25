@@ -2,20 +2,26 @@
 @{
     ViewBag.Title = "Index";
 }
-
-<section class="employee-add-form">
-    <form>
+@section BottomScripts {
+<script src="~/Scripts/main.js"></script>
+}
+<section class="employee-add-container">
+    <form id="form-add-employee">
         <div class="form-group">
-            <label for="employee"></label>
-            <input type="text" value="" name="employee" />
+            <label for="firstname">First</label>
+            <input type="text" value="" name="firstname" id="firstname"/>
+        </div>
+        <div class="form-group">
+            <label for="lastname">Last</label>
+            <input type="text" value="" name="lastname" id="lastname" />
         </div>
         <div class="form-group">
             <label>Spouse</label>
-            <input type="checkbox" value="1" name="spouse"/>
+            <input type="checkbox" value="1" name="spouse" id="spouse" />
         </div>
         <div class="form-group">
             <label>Dependents</label>
-            <select>
+            <select name="dependents" id="dependents">
                 @for (var i = 0; i < 21; i++)
                 {
                     <option value="@i">@i</option>
@@ -26,4 +32,4 @@
         <input type="submit" value="submit" />
     </form>
 </section>
-
+<section id="employee-list">test</section>
