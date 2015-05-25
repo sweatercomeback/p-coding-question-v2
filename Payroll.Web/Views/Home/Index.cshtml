@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<section class="employee-add-form">
+    <form>
+        <div class="form-group">
+            <label for="employee"></label>
+            <input type="text" value="" name="employee" />
+        </div>
+        <div class="form-group">
+            <label>Spouse</label>
+            <input type="checkbox" value="1" name="spouse"/>
+        </div>
+        <div class="form-group">
+            <label>Dependents</label>
+            <select>
+                @for (var i = 0; i < 21; i++)
+                {
+                    <option value="@i">@i</option>
+                }
+            </select>
+        </div>
+
+        <input type="submit" value="submit" />
+    </form>
+</section>
+
