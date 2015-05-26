@@ -124,6 +124,7 @@
     <Content Include="packages.config" />
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\Src\Common\logger.js" />
+    <Content Include="Scripts\Src\employeeList.js" />
     <Content Include="Scripts\Src\main.js" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />

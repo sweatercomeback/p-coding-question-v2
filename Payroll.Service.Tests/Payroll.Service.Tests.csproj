@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Payroll.Service.Tests</RootNamespace>
     <AssemblyName>Payroll.Service.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,10 +45,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DiscountEmployeeEstimatorTests.cs" />
+    <Compile Include="EmployeeEstimatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Payroll.Core\Payroll.Core.csproj">
+      <Project>{17f28c48-ed63-4e6d-a399-29bda630ac3d}</Project>
+      <Name>Payroll.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Payroll.Service\Payroll.Service.csproj">
+      <Project>{0240c22c-a77f-487b-b2cd-f6dfa5dbd636}</Project>
+      <Name>Payroll.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
