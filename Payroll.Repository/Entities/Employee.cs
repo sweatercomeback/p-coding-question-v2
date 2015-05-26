@@ -1,13 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Payroll.Core.Entities
+namespace Payroll.Repository.Entities
 {
     public class Employee
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public int DependentCount { get; set; }  
+        public int DependentCount { get; set; }
     }
 }

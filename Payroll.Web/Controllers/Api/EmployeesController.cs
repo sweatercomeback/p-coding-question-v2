@@ -12,6 +12,7 @@ namespace Payroll.Web.Controllers.Api
     public class EmployeesController : ApiController
     {
         private EmployeeService _employeeService = new EmployeeService();
+
         // GET: api/Employees
         public IEnumerable<Employee> Get()
         {

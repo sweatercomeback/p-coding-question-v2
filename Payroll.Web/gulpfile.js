@@ -23,10 +23,6 @@ gulp.task('sass:watch', function () {
 });
 
 gulp.task('js:transpile', function () {
-    //return gulp.src('./Scripts/Src/**/*.js')
-    //    .pipe(babel())
-    //   .pipe(gulp.dest('./Scripts'));
-
     browserify({
         entries: './Scripts/Src/main.js',
         debug: true
