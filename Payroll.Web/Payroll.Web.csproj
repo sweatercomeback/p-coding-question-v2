@@ -125,6 +125,7 @@
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\Src\Common\logger.js" />
     <Content Include="Scripts\Src\employeeList.js" />
+    <Content Include="Scripts\Src\estimator.js" />
     <Content Include="Scripts\Src\main.js" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -136,6 +137,7 @@
     <Content Include="package.json" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Employees\Index.cshtml" />
+    <Content Include="Views\Estimator\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -156,6 +158,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\Api\EmployeesController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
+    <Compile Include="Controllers\EstimatorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

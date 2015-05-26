@@ -18,6 +18,11 @@ namespace Payroll.Service
             _employee = employee;
         }
 
+        public string DisplayName
+        {
+            get { return string.Format("{0}, {1}", _employee.LastName, _employee.FirstName); }
+        }
+
         public decimal YearlyCost
         {
             get

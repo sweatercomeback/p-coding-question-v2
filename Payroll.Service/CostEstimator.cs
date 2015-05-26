@@ -17,7 +17,7 @@ namespace Payroll.Service
             _employees = employees.ToList();
         }
 
-        protected virtual List<EmployeeEstimatorBase> Estimators {
+        public virtual List<EmployeeEstimatorBase> Estimators {
             get
             {
                 if (_estimators != null)

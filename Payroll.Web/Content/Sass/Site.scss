@@ -19,10 +19,18 @@ html, body {
     .body-content {
         width: 90%;
         margin: 0 auto;
-        
+        @include outer-container;
         .employee-add-container {
-
+            @include span-columns(4);
         }
+        .employee-list-container {
+            @include span-columns(4);
+        }
+
+        .totals-container {
+            @include span-columns(4);
+        }
+
     }
 }
 footer, .push {

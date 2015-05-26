@@ -1,0 +1,20 @@
+﻿
+@model Payroll.Service.CostEstimator
+@{
+    Layout = null;
+}
+
+@if (Model.Estimators.Count == 0)
+{
+    return; 
+}
+<h2>@Model.YearlyTotalCost.ToString("C")</h2>
+<ul>
+    @foreach (var e in Model.Estimators)
+    {
+        <li>
+            <h3>@e.DisplayName</h3>
+            @e.YearlyCost.ToString("C");
+        </li>
+    }
+</ul>

@@ -22,7 +22,42 @@ html, body {
 
 .wrapper .body-content {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wrapper .body-content::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.wrapper .body-content .employee-add-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+
+.wrapper .body-content .employee-add-container:last-child {
+  margin-right: 0; }
+
+.wrapper .body-content .employee-list-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+
+.wrapper .body-content .employee-list-container:last-child {
+  margin-right: 0; }
+
+.wrapper .body-content .totals-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+
+.wrapper .body-content .totals-container:last-child {
+  margin-right: 0; }
 
 footer, .push {
   height: 155px;

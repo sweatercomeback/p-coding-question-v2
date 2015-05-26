@@ -1,7 +1,8 @@
 ﻿import * as logger from './Common/logger';
 import * as employeeList from './employeeList';
+import * as estimator from './estimator';
 
-var $theForm, $theListContainer;
+var $theForm, $theListContainer, $theEstimatorContainer;
    function postAdd(data) {
         return $.ajax({
             url: '/api/employees',
@@ -24,13 +25,19 @@ var $theForm, $theListContainer;
         return postAdd(employee).then(function() {
             $theForm[0].reset();
             employeeList.get($theListContainer);
+            estimator.get($theEstimatorContainer);
         });
        
     }
 
-    export function init($form, $container) {
+    export function init($form, $container, $estimator) {
         $theForm = $form;
         $theListContainer = $container;
+        $theEstimatorContainer = $estimator;
+
         $form.on("submit", add);
+
+        employeeList.get($theListContainer);
+        estimator.get($theEstimatorContainer);
     }
 
