@@ -16,11 +16,11 @@
             <input type="text" value="" name="lastname" id="lastname" />
         </div>
         <div class="form-group">
-            <label>Spouse</label>
+            <label for="spouse">Spouse</label>
             <input type="checkbox" value="1" name="spouse" id="spouse" />
         </div>
         <div class="form-group">
-            <label>Dependents</label>
+            <label>Other Dependents</label>
             <select name="dependents" id="dependents">
                 @for (var i = 0; i < 21; i++)
                 {
@@ -28,8 +28,9 @@
                 }
             </select>
         </div>
-
-        <input type="submit" value="submit" />
+        <div class="button-group">
+            <input type="submit" value="submit" />
+        </div>
     </form>
 </section>
 <section id="employee-list" class="employee-list-container"></section>

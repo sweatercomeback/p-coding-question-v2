@@ -2,9 +2,17 @@
 @{
     Layout = null;
 }
+@if (!Model.Any())
+{
+    return;
+}
+<h2>Employee List</h2>
 <ul>
     @foreach (var e in Model)
     {
-        <li>@e.LastName, @e.FirstName - @e.DependentCount</li>
+        <li>
+            <h3>@e.LastName, @e.FirstName</h3> 
+            Dependents: @e.DependentCount
+        </li>
     }
 </ul>
